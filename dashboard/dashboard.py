@@ -17,7 +17,7 @@ def create_weather_rent_df(df):
 
 # Load data yang sudah bersih
 # File ini harus berada di folder yang sama dengan dashboard.py
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("dashboard/main_data.csv")
 
 # Memastikan kolom tanggal bertipe datetime
 all_df['dteday'] = pd.to_datetime(all_df['dteday'])
